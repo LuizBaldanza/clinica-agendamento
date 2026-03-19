@@ -1,0 +1,12 @@
+# Dependências (instale com npm install)
+node_modules/
+
+# Arquivo com senhas e chaves secretas — NUNCA suba isso!
+.env
+
+# Pasta de build do frontend
+dist/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
