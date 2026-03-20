@@ -29,12 +29,10 @@ const app = express();
 // Permite receber dados em formato JSON (como um formulário digital)
 app.use(express.json());
 
-// Permite que o Vue.js (rodando em outra porta) acesse este servidor
 app.use(cors({
-  origin: 'http://localhost:5173', // Endereço padrão do Vue.js
-  credentials: true
+  origin: '*',
+  credentials: false
 }));
-
 // ============================================================
 // ROTAS — São os "endereços" da nossa API
 // ============================================================
