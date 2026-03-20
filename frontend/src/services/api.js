@@ -8,7 +8,7 @@ import axios from 'axios'
 
 // Cria uma instância do Axios com configurações padrão
 const api = axios.create({
-  baseURL: '/api',  // Prefixo de todas as URLs (vai para o proxy do Vite)
+  baseURL: import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL + '/api' : '/api',
   timeout: 10000,   // Tempo máximo de espera: 10 segundos
 })
 
